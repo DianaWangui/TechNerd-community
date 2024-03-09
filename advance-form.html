@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample Form</title>
+<style>
+  /* Some basic styling for better appearance */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" required>
+
+  <label for="email">Email:</label>
+  <input type="email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" rows="4" required></textarea>
+
+  <label>Gender:</label>
+
+  <label for="male">Male</label>
+  <input type="radio" id="male" name="gender" value="male">
+  
+  <label for="female">Female</label>
+  <input type="radio" id="female" name="gender" value="female">
+
+  <label for="other">Other</label>
+  <input type="radio" id="other" name="gender" value="other">
+  
+  <label for="newsletter">Subscribe to Newsletter:</label>
+  <label for="no">Yes</label>
+  <input type="checkbox" id="newsletter" name="newsletter">
+
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+  </select>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
